@@ -132,8 +132,8 @@ var NAVTREEINDEX0 =
 "globals_defs.html":[3,1,3],
 "globals_func.html":[3,1,1],
 "globals_vars.html":[3,1,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#author":[0,4],
 "index.html#circuit":[0,2],
 "index.html#description":[0,1],
@@ -146,5 +146,7 @@ var NAVTREEINDEX0 =
 "md__r_e_a_d_m_e.html#autotoc_md3":[1,2],
 "md__r_e_a_d_m_e.html#autotoc_md4":[1,3],
 "md__r_e_a_d_m_e.html#autotoc_md5":[1,4],
+"md__r_e_a_d_m_e.html#autotoc_md6":[1,5],
+"md__r_e_a_d_m_e.html#autotoc_md7":[1,6],
 "pages.html":[]
 };

@@ -89,11 +89,42 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizab
 <div class="textblock"><p >Safewater UV-C Rainwater Sanitisation Controller for Arduino</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Documentation</h1>
-<p >Doxygen Documentation at <a href="https://acksen.github.io/SafewaterFirmware/">Github Pages</a></p>
+<p >Doxygen Documentation at <a href="https://acksen.github.io/SafewaterFirmware/docs/html">Github Pages</a></p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Introduction</h1>
-<p >Documentation for the firmware of the UV-C Rainwater Sanitisation Controller, designed by Acksen Ltd (<a href="https://www.acksen.com">https://www.acksen.com</a> <a href="https://www.aquaductor.com">https://www.aquaductor.com</a>) for the Safewater Research Initiative (<a href="https://www.safewater-research.com/">https://www.safewater-research.com/</a>).</p>
+<p >Documentation for the firmware of the UV-C Rainwater Sanitisation Controller, designed by Acksen Ltd (<a href="http://www.acksen.com">http://www.acksen.com</a> <a href="https://www.aquaductor.com">https://www.aquaductor.com</a>) for the Safewater Research Initiative (<a href="https://www.safewater-research.com/">https://www.safewater-research.com/</a>).</p>
 <h1><a class="anchor" id="autotoc_md3"></a>
+Description</h1>
+<p >This is the firmware for the UV-C Rainwater Sanitisation Controller, designed by Acksen Ltd (<a href="http://www.acksen.com">http://www.acksen.com</a> <a href="https://www.aquaductor.com">https://www.aquaductor.com</a>) for the Safewater Research Initiative (<a href="https://www.safewater-research.com/">https://www.safewater-research.com/</a>).</p>
+<p >This firmware is designed around the Arduino Uno SMD, or ATMega328P Microcontroller. This firmware can be easily ported to other 8-bit Atmel Microcontrollers.</p>
+<p >The Safewater Ultraviolet Water Purification Controller is designed to automatically provide safe, sanitised and potable water for you and your family.</p>
+<p >The controller automatically takes untreated water from your storage tank and treats it, to ensure that you have a steady supply of clean water. No manual intervention is needed – the controller will function by itself and notify you via an alarm if any problems occur.</p>
+<p >This is designed for a system which:</p><ul>
+<li>Collects rainwater into an untreated water tank.</li>
+<li>Uses a UV-C sanitisation lamp to disinfect the collected rainwater and ensure that it is safe for human consumption. A filter is also used to remove physical contaminants.</li>
+<li>Disinfected water is placed into a treated water tank.</li>
+<li>When the treated water tank reaches a lower bound float switch (Switch T1), the controller automatically refills it using water from the treated tank.</li>
+<li>When the upper bound float switch on the treated tank is triggered (Switch T2), disinfection and pumping stops.</li>
+<li>The untreated water tank features a float switch at the base (Switch S) to confirm that there is rainwater to pump and disinfect.</li>
+</ul>
+<p >The controller features a number of safety features, such as:</p><ul>
+<li>Warm-up period for the UV-C Lamp to ensure it has reached operating temperature</li>
+<li>Automatically ends the pumping sequence after a timeout period (based around the tank size/pump rate). This is presently set for the Safewater systems deployed to Mexico and Colombia, and is altered using a external jumper on an input line.</li>
+<li>Override button to immediately start the disinfection sequence and provide water, regardless of present state.</li>
+<li>Uses Hardware Watchdog Timer on the Microcontroller to reboot if normal firmware operation is interrupted</li>
+<li>Checks the UV-C Lamp operating current while disinfecting, to ensure that it is operating correctly.</li>
+<li>Provides user alarms for UV-C Lamp Fault, Maximum Runtime Exceeded (due to e.g. Water Pump Fault), Treated Tank Float Switch Fault and Source Tank Empty Fault.</li>
+<li>Anti-cycling management</li>
+<li>Automatic retry system in case of transient faults</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Circuit</h1>
+<ul>
+<li>Firmware is designed to operate on an ATMega328P Microcontroller, 32-pin Surface Mount version.</li>
+<li>For PCB Layout and Schematic, please see the accompanying SafewaterHardware repository on Github. (<a href="https://www.github.com/Acksen/SafewaterHardware">https://www.github.com/Acksen/SafewaterHardware</a>)</li>
+<li>Further information is available on the Aquaductor website for the commercial implementation of the controller, including instruction manuals, Wiring Diagrams, Troubleshooting, Installation &amp; Faults Overview. (<a href="https://www.aquaductor.com/resources">https://www.aquaductor.com/resources</a>)</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md5"></a>
 Dependencies</h1>
 <ul>
 <li>AcksenButton (<a href="https://github.com/acksen/AcksenButton">https://github.com/acksen/AcksenButton</a>) - Processes button inputs to the system.</li>
@@ -104,10 +135,10 @@ Dependencies</h1>
 <li>Arduino Time Library (<a href="https://github.com/PaulStoffregen/Time">https://github.com/PaulStoffregen/Time</a>) - Provide time-related variable types and functions.</li>
 </ul>
 <p >Requires Arduino IDE v1.8.10 or greater.</p>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 Author</h1>
 <p >Written by Richard Phillips for Acksen Ltd.</p>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md7"></a>
 License</h1>
 <p >This source file is licenced using the GNU General Public License version 3.</p>
 <p >Copyright (c) 2020, 2022 Acksen Ltd, All rights reserved.</p>

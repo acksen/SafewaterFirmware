@@ -36,9 +36,11 @@ var NAVTREE =
     [ "SafewaterFirmware", "md__r_e_a_d_m_e.html", [
       [ "Documentation", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
       [ "Introduction", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
-      [ "Dependencies", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
-      [ "Author", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
-      [ "License", "md__r_e_a_d_m_e.html#autotoc_md5", null ]
+      [ "Description", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
+      [ "Circuit", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "Dependencies", "md__r_e_a_d_m_e.html#autotoc_md5", null ],
+      [ "Author", "md__r_e_a_d_m_e.html#autotoc_md6", null ],
+      [ "License", "md__r_e_a_d_m_e.html#autotoc_md7", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
