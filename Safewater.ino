@@ -14,12 +14,12 @@
  * 
  * @section intro_sec Introduction
  * Documentation for the firmware of the UV-C Rainwater Sanitisation Controller, designed by Acksen Ltd
- * (https://www.acksen.com https://www.aquaductor.com) for the Safewater Research 
+ * (http://www.acksen.com https://www.aquaductor.com) for the Safewater Research 
  * Initiative (https://www.safewater-research.com/).
  * 
  * @section description Description
  * This is the firmware for the UV-C Rainwater Sanitisation Controller, designed by Acksen Ltd
- * (https://www.acksen.com https://www.aquaductor.com) for the Safewater Research 
+ * (http://www.acksen.com https://www.aquaductor.com) for the Safewater Research 
  * Initiative (https://www.safewater-research.com/).
  * 
  * This firmware is designed around the Arduino Uno SMD, or ATMega328P Microcontroller.
